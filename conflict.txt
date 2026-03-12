@@ -1,1 +1,1 @@
-hello master edit
+resolved conflict
