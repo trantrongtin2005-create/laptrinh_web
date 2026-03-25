@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Màn hình chi tiết</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
+        .wrapper {
+            width: 800px;
+            max-width: 100%;
+        }
+
+        /* Header & Footer đồng nhất */
+        .header, .footer {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .header {
+            margin-bottom: 50px;
+        }
+
+        .header b {
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 50px;
+        }
+
+        /* Form chi tiết */
+        .detail-container {
+            border: 1px solid black;
+            width: 500px;
+            margin: 0 auto;
+            padding: 40px;
+            box-sizing: border-box;
+            position: relative; /* Để căn nút bấm dễ hơn */
+        }
+
+        .detail-container h2 {
+            text-align: center;
+            font-weight: normal;
+            font-size: 22px;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        /* Dòng thông tin */
+        .info-group {
+            display: flex;
+            margin-bottom: 25px;
+            align-items: center;
+        }
+
+        .info-label {
+            width: 100px;
+            font-size: 15px;
+            color: #000;
+        }
+
+        .info-value {
+            flex: 1;
+            font-weight: bold;
+            font-size: 15px;
+            color: #000;
+        }
+
+        /* Nút Chỉnh sửa */
+        .button-area {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .btn-edit {
+            background-color: #0052cc;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-edit:hover {
+            background-color: #0043a8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            Home | <b>Đăng xuất</b>
+        </div>
+
+        <div class="detail-container">
+            <h2>Màn hình chi tiết</h2>
+
+            <div class="info-group">
+                <div class="info-label">Username</div>
+                <div class="info-value">test1</div>
+            </div>
+
+            <div class="info-group">
+                <div class="info-label">Email</div>
+                <div class="info-value">test1@gmail.com</div>
+            </div>
+
+            <div class="button-area">
+                <button class="btn-edit">Chỉnh sửa</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            Lập trình web @01/2024
+        </div>
+    </div>
+
+</body>
+</html>
