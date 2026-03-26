@@ -3,89 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Màn hình cập nsshật</title>
+=======
+    <title>Màn hình cập nhật</title>
+>>>>>>> origin/template
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             color: #333;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
 
+        /* Container tổng cho vừa kích thước */
         .wrapper {
             width: 800px;
-            border: 1px solid #ccc; /* Khung ngoài cùng giống như trong ảnh */
-            padding: 20px;
-            box-sizing: border-box;
+            max-width: 100%;
         }
 
-        /* Header & Footer */
-        .nav-bar, .footer {
+        /* Style cho Header và Footer */
+        .header, .footer {
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            margin-bottom: 20px;
             font-size: 15px;
         }
 
-        .nav-bar b {
+        .header b {
             font-weight: bold;
         }
 
-        /* Form Container */
-        .main-content {
+        .footer {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+
+        /* Style cho hộp form chính */
+        .form-container {
             border: 1px solid black;
-            width: 550px;
+            width: 500px;
             margin: 40px auto;
-            padding: 40px;
+            padding: 40px 50px;
             box-sizing: border-box;
         }
 
-        .main-content h2 {
+        .form-container h2 {
             text-align: center;
             font-weight: normal;
             font-size: 22px;
-            margin-bottom: 35px;
+            margin-top: 0;
+            margin-bottom: 30px;
+            color: #444;
         }
 
-        /* Form Groups */
+        /* Style cho các dòng input */
         .form-group {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .form-group label {
-            width: 120px;
+            width: 100px;
+            text-align: center;
             font-size: 14px;
-            text-align: left;
-            padding-right: 10px;
+            margin-right: 15px;
+            line-height: 1.4;
         }
 
         .form-group input {
             flex: 1;
             padding: 8px;
             border: 1px solid black;
-            text-align: center;
+            text-align: center; /* Căn giữa text 'xxx' */
             font-size: 14px;
+            outline: none;
         }
 
-        /* Actions */
-        .actions {
+        /* Khu vực nút bấm */
+        .form-actions {
             display: flex;
             justify-content: flex-end;
             align-items: center;
             margin-top: 30px;
-            gap: 25px;
+            gap: 20px;
         }
 
-        .actions a {
+        .form-actions a {
             color: #5b9bd5;
             text-decoration: none;
             font-size: 14px;
         }
 
-        .btn-submit {
+        .form-actions a:hover {
+            text-decoration: underline;
+        }
+
+        .form-actions button {
             background-color: #0052cc;
             color: white;
             border: none;
@@ -95,48 +113,44 @@
             font-size: 14px;
         }
 
-        .btn-submit:hover {
+        .form-actions button:hover {
             background-color: #0043a8;
-        }
-
-        .footer {
-            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
     <div class="wrapper">
-        <div class="nav-bar">
+        <div class="header">
             Home | Đăng nhập | <b>Đăng ký</b>
         </div>
 
-        <div class="main-content">
+        <div class="form-container">
             <h2>Màn hình cập nhật</h2>
 
             <div class="form-group">
                 <label>Username</label>
-                <input type="text" value="xxx">
+                <input type="text" placeholder="xxx" value="xxx">
             </div>
 
             <div class="form-group">
                 <label>Mật khẩu</label>
-                <input type="password" value="xxx">
+                <input type="password" placeholder="xxx" value="xxx">
             </div>
 
             <div class="form-group">
                 <label>Nhập lại<br>mật khẩu</label>
-                <input type="password" value="xxx">
+                <input type="password" placeholder="xxx" value="xxx">
             </div>
 
             <div class="form-group">
                 <label>Email</label>
-                <input type="email" value="xxx">
+                <input type="email" placeholder="xxx" value="xxx">
             </div>
 
-            <div class="actions">
+            <div class="form-actions">
                 <a href="#">Đã có tài khoản</a>
-                <button type="submit" class="btn-submit">Đăng ký</button>
+                <button type="button">Đăng ký</button>
             </div>
         </div>
 
